@@ -1,0 +1,20 @@
+print("Enter the first point in (x,y) format lying in xy-plane: ")
+x1,y1=float(input()),float(input())
+
+print("Enter the second point in (x,y) format lying in xy-plane: ")
+x2,y2=float(input()),float(input())
+
+if (x1==x2 and y1!=y2):
+    print("The line is vertical and can be written as x = ", x1)
+elif (x1!=x2 and y1==y2):
+    print("The line is horyzontal and can be written as y = ", y1)
+else:
+    slope=(y2-y1)/(x2-x1)
+slope
+
+if (slope > 0):
+    b=y1-slope*x1
+    print("The line is positive and can be written as y = ",slope,"x + ",b)
+elif (slope < 0):
+    b = y1 - slope * x1
+    print("The line is negative and can be written as y = ",slope,"x + ", b)
