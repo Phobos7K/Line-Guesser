@@ -1,0 +1,33 @@
+#include <iostream>
+#include <cmath>
+#include <string>
+
+using namespace std;
+
+int main(){
+
+	float x1,y1,x2,y2,slope,b;
+	
+	cout<<"Enter the fi	rst point in (x,y) format lying in xy-plane: \n";
+	cin>>x1>>y1;
+	cout<<"Enter the the second point in (x,y) format lying in xy-plane: \n";
+	cin>>x2>>y2;
+	
+	if (x1==x2 && y1!=y2){
+		cout<<"The line is vertical and can be written as x = "<<x1<<endl;
+	} else if (x1!=x2 && y1==y2) {
+		cout<<"The line is horyzontal and can be written as y = "<<y1<<endl;
+	} else if (x1!=x2 && y1!=y2) {
+		slope = (y2-y1)/(x2-x1);
+	} 
+	slope;
+	if (slope > 0) {
+		b=y1-slope*x1;
+		cout<<"The line is positive and can be written as y = "<<slope<<"x + "<<b<<endl;
+	} else if (slope < 0) {
+		b=y1-slope*x1;
+		cout<<"The line is negative and can be written as y = "<<slope<<"x + "<<b<<endl;
+	} 
+	
+	return 0;
+}
