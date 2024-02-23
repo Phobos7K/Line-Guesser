@@ -1,4 +1,4 @@
-def type(x1,y1,x2,y2):
+def line_type(x1,y1,x2,y2):
     try:
         slope = (y2-y1)/(x2-x1)
     except ZeroDivisionError:
