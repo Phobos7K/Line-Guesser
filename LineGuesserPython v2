@@ -1,0 +1,15 @@
+def type(x1,y1,x2,y2):
+    try:
+        slope = (y2-y1)/(x2-x1)
+    except ZeroDivisionError:
+        if (x1==x2 and y1!=y2):
+            print(f"The line is vertical and can be written as x = {x1}")
+    else:
+        if (x1!=x2 and y1==y2):
+            print(f"The line is horyzontal and can be written as y = {y1}")
+        if (slope > 0):
+            b=y1-slope*x1
+            print(f"The line is positive and can be written as y = {slope}*x + {b}")
+        else:
+            b = y1 - slope * x1
+            print(f"The line is negative and can be written as y = {slope}*x + {b}")
